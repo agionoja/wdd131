@@ -1,5 +1,44 @@
+/*
+ * ==========================================
+ * CSS-VARIABLES
+ * ==========================================
+ */
+
+/*
+ * ==========================================
+ * CORE-PALETTE
+ * ==========================================
+ */
 :root {
-  --border-color: #b4b4b4;
+  --color-blue-900: #2c3e50;
+  --color-teal-500: #1abc9c;
+  --color-yellow-500: #f39c12;
+  --color-gray-800: #34495e;
+  --color-gray-400: #bdc3c7;
+  --color-white: #ffffff;
+}
+
+/*
+ * ==========================================
+ * SEMANTIC-PALETTE
+ * ==========================================
+ */
+:root {
+  --color-primary: var(--color-blue-900);
+  --color-accent: var(--color-teal-500);
+  --color-highlight: var(--color-yellow-500);
+  --color-text-body: var(--color-gray-800);
+  --color-text-light: var(--color-white);
+  --color-border: var(--color-gray-400);
+  --color-background: var(--color-white);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -8,6 +47,9 @@ html {
 
 body {
   font-size: 1.6rem;
+  line-height: 1.6;
+  color: var(--color-text-body);
+  background-color: var(--color-background);
 }
 
 .site-wrapper {
@@ -17,7 +59,8 @@ body {
 
 .main-layout {
   display: flex;
-  gap: 1rem;
+  gap: 1.6rem;
+  margin: 2rem;
 }
 
 .about-section {
@@ -29,13 +72,13 @@ body {
 }
 
 .card {
-  border: 0.15rem solid var(--border-color);
-  padding: 1rem;
+  border: 0.15rem solid var(--color-border);
+  padding: 1.6rem;
   border-radius: 1rem;
 }
 
 .profile-img {
-  width: 20rem;
+  width: 15rem;
   max-width: 100%;
   height: auto;
   object-fit: cover;
@@ -51,4 +94,26 @@ body {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+}
+
+header nav a {
+  color: var(--color-accent);
+}
+
+.footer {
+  text-align: center;
+}
+
+/*
+ * ==========================================
+ * UTILITY-CLASSES
+ * ==========================================
+ */
+.bg-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+}
+
+.text-highlight {
+  color: var(--color-highlight);
 }
