@@ -12,9 +12,11 @@
 :root {
   --color-blue-900: #2c3e50;
   --color-teal-500: #1abc9c;
+  --color-teal-400: #2fe2b3;
   --color-yellow-500: #f39c12;
   --color-gray-800: #34495e;
   --color-gray-400: #bdc3c7;
+  --color-gray-100: #ecf0f1;
   --color-white: #ffffff;
 }
 
@@ -26,11 +28,13 @@
 :root {
   --color-primary: var(--color-blue-900);
   --color-accent: var(--color-teal-500);
+  --color-accent-hover: var(--color-teal-400);
   --color-highlight: var(--color-yellow-500);
   --color-text-body: var(--color-gray-800);
   --color-text-light: var(--color-white);
   --color-border: var(--color-gray-400);
   --color-background: var(--color-white);
+  --color-surface-nav: var(--color-gray-100);
 }
 
 *,
@@ -96,12 +100,26 @@ body {
   object-fit: cover;
 }
 
-header nav a {
+header nav {
+  background-color: var(--color-surface-nav);
+  padding: 1rem;
+}
+
+header nav a:link,
+header nav a:visited {
   color: var(--color-accent);
+  text-decoration: none;
+}
+
+header nav a:hover,
+header nav a:active {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
 }
 
 .footer {
   text-align: center;
+  padding: 1rem;
 }
 
 /*
