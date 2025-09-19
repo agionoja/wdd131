@@ -2,6 +2,14 @@
   --border-color: #b4b4b4;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
 .site-wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -21,17 +29,26 @@
 }
 
 .card {
-  border: 1px solid var(--border-color);
+  border: 0.15rem solid var(--border-color);
   padding: 1rem;
+  border-radius: 1rem;
 }
 
 .profile-img {
-  width: 240px;
-  height: 300px;
+  width: 20rem;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 .profile-content {
   display: flex;
+}
+
+.flag {
+  width: 15rem;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
