@@ -54,11 +54,18 @@ body {
   line-height: 1.6;
   color: var(--color-text-body);
   background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site-wrapper {
   max-width: 1440px;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.site-header {
+  text-align: center;
 }
 
 .main-layout {
@@ -100,19 +107,24 @@ body {
   object-fit: cover;
 }
 
-header nav {
+.site-nav {
   background-color: var(--color-surface-nav);
   padding: 1rem;
 }
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
 
-header nav a:link,
-header nav a:visited {
+.site-nav a:link,
+.site-nav a:visited {
   color: var(--color-accent);
   text-decoration: none;
 }
 
-header nav a:hover,
-header nav a:active {
+.site-nav a:hover,
+.site-nav a:active {
   color: var(--color-accent-hover);
   text-decoration: underline;
 }
