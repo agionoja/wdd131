@@ -37,6 +37,11 @@
   --color-surface-nav: var(--color-gray-100);
 }
 
+/*
+ * ==========================================
+ * RESET & BASE STYLES
+ * ==========================================
+ */
 *,
 ::before,
 ::after {
@@ -49,43 +54,138 @@ html {
   font-size: 62.5%;
 }
 
-body {
+.page-body {
+  font-family: "Inter", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6;
+  letter-spacing: -0.02em;
   color: var(--color-text-body);
   background-color: var(--color-background);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
+/*
+ * ==========================================
+ * LAYOUT COMPONENTS
+ * ==========================================
+ */
 .site-wrapper {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: 0 auto;
+  height: fit-content;
 }
 
 .site-header {
+  /*padding: 1rem;*/
+}
+
+.course-title {
   text-align: center;
+  font-size: 2.5rem;
+  padding: 1.6rem;
 }
 
-.main-layout {
+.student-name {
+  font-size: 2rem;
+}
+
+.primary-nav {
+  background-color: var(--color-surface-nav);
+  padding: 1rem 6rem;
+}
+
+.primary-nav__list {
+  list-style: none;
   display: flex;
-  gap: 1.6rem;
-  margin: 2rem;
+  justify-content: space-between;
 }
 
-.about-section {
+.primary-nav__item {
+}
+
+.primary-nav__link {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.primary-nav__link:hover,
+.primary-nav__link:active {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+.main-content {
+  display: flex;
+  gap: 1rem;
+  margin: 3.4rem;
+}
+
+/*
+ * ==========================================
+ * CARD COMPONENTS
+ * ==========================================
+ */
+.card {
+  border: 0.15rem solid var(--color-border);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card__header {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.card__title {
+}
+
+.card__body {
+  padding: 2rem;
+}
+
+.about-me {
   flex-basis: 70%;
 }
 
-.resources-sidebar {
+.about-me__text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.resources {
   flex-basis: 30%;
 }
 
-.card {
-  border: 0.15rem solid var(--color-border);
-  padding: 1.6rem;
-  border-radius: 1rem;
+/*
+ * ==========================================
+ * PROFILE COMPONENTS
+ * ==========================================
+ */
+.card__body {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
 }
 
-.profile-img {
+.about-me__text {
+  flex: 1;
+}
+
+.profile {
+  display: flex;
+  gap: 1rem;
+}
+
+.profile__description {
+}
+
+.profile__image {
   width: 15rem;
   max-width: 100%;
   height: auto;
@@ -93,42 +193,93 @@ body {
   border-radius: 0.5rem;
 }
 
-.profile-content {
+/*
+ * ==========================================
+ * LOCATION COMPONENTS
+ * ==========================================
+ */
+.location {
   display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.flag {
+.location__tittle-underline {
+  margin: 0 5rem;
+  opacity: 0.2;
+}
+.location__title {
+  text-align: center;
+  text-decoration-color: var(--color-primary);
+}
+
+.location__content {
+  display: flex;
+  gap: 1rem;
+  /*justify-content: space-between;*/
+}
+
+.location__description {
+  flex-basis: 70%;
+}
+
+.country-flag {
+}
+
+.country-flag__image {
   width: 15rem;
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.site-nav {
-  background-color: var(--color-surface-nav);
-  padding: 1rem;
+.country-flag__caption {
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
 }
-.site-nav ul {
-  list-style: none;
+
+/*
+ * ==========================================
+ * RESOURCES NAVIGATION
+ * ==========================================
+ */
+.resources-nav {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
-.site-nav a:link,
-.site-nav a:visited {
-  color: var(--color-accent);
-  text-decoration: none;
+.resources-nav__list {
+  margin-left: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.site-nav a:hover,
-.site-nav a:active {
-  color: var(--color-accent-hover);
-  text-decoration: underline;
+.resources-nav__item {
 }
 
-.footer {
+.resources-nav__link {
+}
+
+/*
+ * ==========================================
+ * FOOTER COMPONENTS
+ * ==========================================
+ */
+.site-footer {
   text-align: center;
   padding: 1rem;
+}
+
+.footer-content {
+}
+
+.footer-author {
+}
+
+.last-modified {
 }
 
 /*

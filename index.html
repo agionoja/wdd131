@@ -13,137 +13,186 @@
       name="description"
       content="WDD 131 – Dynamic Web Fundamentals by Divine Paul, a student from Nigeria exploring HTML, CSS, and JavaScript to build interactive web pages. This site showcases my learning journey in web design and development."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/base.css" />
     <title>WDD 131 – Dynamic Web Fundamentals – Divine Paul</title>
   </head>
-  <body class="site-wrapper">
-    <header>
-      <h1 id="course-tittle">WDD 131 – Dynamic Web Fundamentals</h1>
-      <nav aria-label="Main navigation">
-        <ul>
-          <li>
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.linkedin.com/in/divine-paul-140515381/"
-              >LinkedIn</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              rel="aliquam deleniti dolore, enim enoopener"
-              href="https://byupw.instructure.com/"
-              >Canvas</a
-            >
-          </li>
-          <li>
-            <a
-              target="_blank"
-              rel="noopener"
-              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
-              >Scripture</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main-layout">
-      <section class="card about-section" aria-labelledby="aboutMe">
-        <header>
-          <h2 id="aboutMe">About Me</h2>
-        </header>
-
-        <div class="profile-content">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda,
-            doloribus et illo magnam quidem quos saepe veniam. Ab accusantium ad
-            alias animi at deserunt eius incidunt ipsa iure magni minus
-            molestiae neque, nesciunt numquam, provident, quod suscipit tempora
-            tenetur voluptates!
-          </p>
-          <img
-            class="profile-img"
-            src="images/profile-img.png"
-            alt="Divine Paul - Professional headshot"
-          />
-        </div>
-
-        <div>
-          <h3>Benue, Nigeria</h3>
-          <div>
-            <figure>
-              <img
-                class="flag"
-                src="images/flag-of-nigeria.png"
-                alt="The official flag of the Federal Republic of Nigeria"
-              />
-              <figcaption>
-                The official flag of the Federal Republic of Nigeria
-              </figcaption>
-            </figure>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              aliquam deleniti dolore, enim eveniet, explicabo facilis harum
-              laudantium modi nostrum quaerat, rerum sequi soluta temporibus
-              voluptate. Aliquid animi aspernatur impedit maiores obcaecati
-              officiis perferendis quas quod similique voluptate! Quisquam,
-              velit!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <aside class="card resources-sidebar">
-        <header>
-          <h2>Web Dev Resources</h2>
-        </header>
-        <nav aria-label="Web development resources">
-          <ul>
-            <li>
-              <a href="https://dev.to" target="_blank" rel="noopener"
-                >Dev.to Community</a
-              >
-            </li>
-            <li>
+  <body class="page-body">
+    <div class="site-wrapper">
+      <header class="site-header">
+        <h1 class="course-title bg-primary" id="course-tittle">
+          WDD 131: Dynamic Web Fundamentals -
+          <span class="student-name text-highlight">Paul Divine</span>
+        </h1>
+        <nav class="primary-nav" aria-label="Main navigation">
+          <ul class="primary-nav__list">
+            <li class="primary-nav__item">
               <a
-                href="https://smashingmagazine.com"
+                class="primary-nav__link"
                 target="_blank"
                 rel="noopener"
-                >Smashing Magazine</a
+                href="https://www.linkedin.com/in/divine-paul-140515381/"
+                >LinkedIn</a
               >
             </li>
-            <li>
-              <a href="https://css-tricks.com" target="_blank" rel="noopener"
-                >CSS Tricks</a
+            <li class="primary-nav__item">
+              <a
+                class="primary-nav__link"
+                target="_blank"
+                rel="aliquam deleniti dolore, enim enoopener"
+                href="https://byupw.instructure.com/"
+                >Canvas</a
               >
             </li>
-            <li>
-              <a href="https://w3schools.com" target="_blank" rel="noopener"
-                >W3 Schools</a
-              >
-            </li>
-            <li>
-              <a href="https://udemy.com" target="_blank" rel="noopener"
-                >Udemy</a
-              >
-            </li>
-            <li>
-              <a href="https://placeholder.com" target="_blank" rel="noopener"
-                >Image Placeholder</a
+            <li class="primary-nav__item">
+              <a
+                class="primary-nav__link"
+                target="_blank"
+                rel="noopener"
+                href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+                >Scripture</a
               >
             </li>
           </ul>
         </nav>
-      </aside>
-    </main>
-    <footer class="footer bg-primary">
-      <p>
-        &#64;2025 🥀 <span class="text-highlight">Divine Paul</span> 🥀 Nigeria
-      </p>
-      <span class="text-highlight" id="lastModified"
-        >Last modification:
-      </span>
-    </footer>
+      </header>
+      <main class="main-content">
+        <section class="about-me card" aria-labelledby="aboutMe">
+          <header class="card__header bg-primary">
+            <h2 class="card__title" id="aboutMe">About Me</h2>
+          </header>
+
+          <div class="card__body">
+            <div class="about-me__text-content">
+              <div class="profile">
+                <p class="profile__description">
+                  Hi, my name is Divine. I was born in Borno state, Nigeria, and
+                  currently live with my family in Bauchi state. I'm diving into
+                  web development because I want to create opportunities for
+                  myself and build the kind of projects that excite me. When I'm
+                  not coding, you'll find me listening to music or tinkering
+                  with random projects - I just love making things work.
+                </p>
+              </div>
+
+              <div class="location">
+                <div>
+                  <h3 class="location__title">
+                    <strong>Benue, Nigeria</strong>
+                  </h3>
+                  <hr class="location__tittle-underline" />
+                </div>
+                <div class="location__content">
+                  <figure class="country-flag">
+                    <img
+                      class="country-flag__image"
+                      src="images/flag-of-nigeria.png"
+                      alt="The official flag of the Federal Republic of Nigeria"
+                    />
+                    <figcaption class="country-flag__caption">
+                      Official flag of Nigeria
+                    </figcaption>
+                  </figure>
+                  <p class="location__description">
+                    Nigeria is home to over 200 million people and more than 250
+                    ethnic groups. From Lagos markets to Kano's ancient walls,
+                    there's always something happening. The jollof rice debates
+                    get heated, and our music scene is electric - Burna Boy and
+                    Wizkid are just the tip of the iceberg. It's where tradition
+                    meets hustle
+                  </p>
+                </div>
+              </div>
+            </div>
+            <img
+              class="profile__image"
+              src="images/profile-img.png"
+              alt="Divine Paul - Professional headshot"
+            />
+          </div>
+        </section>
+
+        <aside class="resources card">
+          <header class="card__header bg-primary">
+            <h2 class="card-title">Web Dev Resources</h2>
+          </header>
+          <div class="card__body">
+            <nav class="resources-nav" aria-label="Web development resources">
+              <ul class="resources-nav__list">
+                <li class="resources-nav__item">
+                  <a
+                    class="resources-nav__link"
+                    href="https://dev.to"
+                    target="_blank"
+                    rel="noopener"
+                    >Dev.to Community</a
+                  >
+                </li>
+                <li class="resources-nav__item">
+                  <a
+                    class="resources-nav__link"
+                    href="https://smashingmagazine.com"
+                    target="_blank"
+                    rel="noopener"
+                    >Smashing Magazine</a
+                  >
+                </li>
+                <li class="resources-nav__item">
+                  <a
+                    class="resources-nav__link"
+                    href="https://css-tricks.com"
+                    target="_blank"
+                    rel="noopener"
+                    >CSS Tricks</a
+                  >
+                </li>
+                <li class="resources-nav__item">
+                  <a
+                    class="resources-nav__link"
+                    href="https://w3schools.com"
+                    target="_blank"
+                    rel="noopener"
+                    >W3 Schools</a
+                  >
+                </li>
+                <li class="resources-nav__item">
+                  <a
+                    class="resources-nav__link"
+                    href="https://udemy.com"
+                    target="_blank"
+                    rel="noopener"
+                    >Udemy</a
+                  >
+                </li>
+                <li class="resources-nav__item">
+                  <a
+                    class="resources-nav__link"
+                    href="https://placeholder.com"
+                    target="_blank"
+                    rel="noopener"
+                    >Image Placeholder</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </aside>
+      </main>
+      <footer class="site-footer bg-primary">
+        <p class="footer-content">
+          &#64;2025 🥀
+          <span class="footer-author text-highlight">Divine Paul</span> 🥀
+          Nigeria
+        </p>
+        <span class="last-modified text-highlight" id="lastModified"
+          >Last modification:
+        </span>
+      </footer>
+    </div>
   </body>
 </html>
