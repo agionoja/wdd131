@@ -1,0 +1,2 @@
+# Ignore HTML files to prevent Prettier from adding self-closing tags.
+index.html
