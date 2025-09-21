@@ -1,12 +1,5 @@
 /*
  * ==========================================
- * GOOGLE FONTS IMPORT
- * ==========================================
- */
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-
-/*
- * ==========================================
  * CORE-PALETTE
  * ==========================================
  */
@@ -75,7 +68,7 @@ html {
  * ==========================================
  */
 .site-wrapper {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   height: fit-content;
 }
@@ -107,6 +100,16 @@ html {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+
+/*
+ * ==========================================
+ * NAVIGATION HOVER EFFECTS
+ * ==========================================
+ */
+nav a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
 }
 
 .primary-nav__link {
@@ -184,7 +187,7 @@ html {
 }
 
 .profile__image {
-  width: 15rem;
+  width: 10rem;
   max-width: 100%;
   height: auto;
   object-fit: cover;
