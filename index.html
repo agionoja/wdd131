@@ -2,13 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="author" content="Divine Paul" />
-    <!--    The description is AI gen-->
     <meta
       name="description"
       content="WDD 131 – Dynamic Web Fundamentals by Divine Paul, a student from Nigeria exploring HTML, CSS, and JavaScript to build interactive web pages. This site showcases my learning journey in web design and development."
@@ -20,14 +16,15 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/base.css" />
+    <script src="scripts/getdates.js" defer></script>
     <title>WDD 131 – Dynamic Web Fundamentals – Divine Paul</title>
   </head>
   <body class="page-body">
     <div class="site-wrapper">
       <header class="site-header">
-        <span class="course-title bg-primary" id="course-tittle">
-          WDD 131: Dynamic Web Fundamentals -
-          <span class="student-name text-highlight">Paul Divine</span>
+        <span class="course-title bg-primary">
+          <span id="course-title">WDD 131: Dynamic Web Fundamentals</span> -
+          <span class="student-name text-highlight">Divine Paul</span>
         </span>
         <nav class="primary-nav" aria-label="Main navigation">
           <ul class="primary-nav__list">
@@ -44,7 +41,7 @@
               <a
                 class="primary-nav__link"
                 target="_blank"
-                rel="aliquam deleniti dolore, enim enoopener"
+                rel="noopener"
                 href="https://byupw.instructure.com/"
                 >Canvas</a
               >
@@ -58,10 +55,22 @@
                 >Scripture</a
               >
             </li>
+            <li class="primary-nav__item">
+              <a
+                class="primary-nav__link"
+                target="_blank"
+                rel="noopener"
+                href="#final-project"
+                >Final Project</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
+
       <main class="main-content">
+        <h1 class="student-name-main">Divine Paul</h1>
+
         <section class="about-me card" aria-labelledby="aboutMe">
           <header class="card__header bg-primary">
             <h2 class="card__title" id="aboutMe">About Me</h2>
@@ -104,7 +113,7 @@
                     there's always something happening. The jollof rice debates
                     get heated, and our music scene is electric - Burna Boy and
                     Wizkid are just the tip of the iceberg. It's where tradition
-                    meets hustle
+                    meets hustle.
                   </p>
                 </div>
               </div>
@@ -183,15 +192,14 @@
           </div>
         </aside>
       </main>
+
       <footer class="site-footer bg-primary">
         <p class="footer-content">
-          &#64;2025 🥀
+          ©<span id="currentyear"></span> 🥀
           <span class="footer-author text-highlight">Divine Paul</span> 🥀
           Nigeria
         </p>
-        <span class="last-modified text-highlight" id="lastModified"
-          >Last modification:
-        </span>
+        <p class="last-modified text-highlight" id="lastModified"></p>
       </footer>
     </div>
   </body>
