@@ -84,6 +84,7 @@ html {
 }
 
 .course-title {
+  display: block;
   text-align: center;
   font-size: 2.5rem;
   padding: 1.6rem;
