@@ -107,10 +107,6 @@ html {
  * NAVIGATION HOVER EFFECTS
  * ==========================================
  */
-nav a:hover {
-  color: var(--color-accent-hover);
-  text-decoration: underline;
-}
 
 .primary-nav__link {
   color: var(--color-accent);
