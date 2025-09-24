@@ -7,10 +7,11 @@
   --color-blue-900: #2c3e50;
   --color-teal-500: #1abc9c;
   --color-teal-400: #2fe2b3;
+  --color-teal-dark: #0a4f42; /* NEW: Much much darker teal - almost black for maximum contrast */
   --color-yellow-500: #f39c12;
   --color-gray-800: #34495e;
   --color-gray-400: #bdc3c7;
-  --color-gray-100: #d5dbdb; /* ONLY CHANGE: Darker nav background for better contrast */
+  --color-gray-100: #ecf0f1; /* Back to original light background */
   --color-white: #ffffff;
 }
 
@@ -108,13 +109,8 @@ html {
  * ==========================================
  */
 
-nav a:hover {
-  color: var(--color-accent-hover);
-  text-decoration: underline;
-}
-
 .primary-nav__link {
-  color: var(--color-accent);
+  color: var(--color-teal-dark); /* CHANGED: Use much darker teal for better contrast */
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -124,9 +120,9 @@ nav a:hover {
 .primary-nav__link:hover,
 .primary-nav__link:active,
 .primary-nav__link:focus {
-  color: #ffffff; /* ONLY CHANGE: White text on hover for better contrast */
+  color: var(--color-white); /* White text on hover */
   text-decoration: underline;
-  background-color: var(--color-teal-500); /* ONLY CHANGE: Solid background instead of transparent */
+  background-color: var(--color-teal-dark); /* Use darker teal for background */
   transform: translateY(-2px);
 }
 
@@ -258,7 +254,7 @@ nav a:hover {
 }
 
 .resources-nav__link {
-  color: var(--color-accent);
+  color: var(--color-teal-dark); /* CHANGED: Use much darker teal for better contrast */
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -269,9 +265,9 @@ nav a:hover {
 .resources-nav__link:hover,
 .resources-nav__link:active,
 .resources-nav__link:focus {
-  color: #ffffff; /* ONLY CHANGE: White text on hover for better contrast */
+  color: var(--color-white); /* White text on hover */
   text-decoration: underline;
-  background-color: var(--color-teal-500); /* ONLY CHANGE: Solid background instead of transparent */
+  background-color: var(--color-teal-dark); /* Use darker teal for background */
   transform: translateX(5px);
 }
 
