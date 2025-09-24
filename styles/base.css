@@ -113,7 +113,7 @@ nav a:hover {
 }
 
 .primary-nav__link {
-  color: var(--color-accent);
+  color: var(--color-primary);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -257,7 +257,7 @@ nav a:hover {
 }
 
 .resources-nav__link {
-  color: var(--color-accent);
+  color: var(--color-primary);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
