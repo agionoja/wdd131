@@ -10,7 +10,7 @@
   --color-yellow-500: #f39c12;
   --color-gray-800: #34495e;
   --color-gray-400: #bdc3c7;
-  --color-gray-100: #ecf0f1;
+  --color-gray-100: #d5dbdb; /* ONLY CHANGE: Darker nav background for better contrast */
   --color-white: #ffffff;
 }
 
@@ -104,16 +104,17 @@ html {
 
 /*
  * ==========================================
- * NAVIGATION HOVER EFFECTS
+ * NAVIGATION HOVER EFFECTS - FIXED CONTRAST ONLY
  * ==========================================
  */
+
 nav a:hover {
   color: var(--color-accent-hover);
   text-decoration: underline;
 }
 
 .primary-nav__link {
-  color: var(--color-primary);
+  color: var(--color-accent);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -123,9 +124,9 @@ nav a:hover {
 .primary-nav__link:hover,
 .primary-nav__link:active,
 .primary-nav__link:focus {
-  color: var(--color-accent-hover);
+  color: #ffffff; /* ONLY CHANGE: White text on hover for better contrast */
   text-decoration: underline;
-  background-color: rgba(26, 188, 156, 0.1);
+  background-color: var(--color-teal-500); /* ONLY CHANGE: Solid background instead of transparent */
   transform: translateY(-2px);
 }
 
@@ -239,7 +240,7 @@ nav a:hover {
 
 /*
  * ==========================================
- * RESOURCES NAVIGATION
+ * RESOURCES NAVIGATION - FIXED CONTRAST ONLY
  * ==========================================
  */
 .resources-nav {
@@ -257,7 +258,7 @@ nav a:hover {
 }
 
 .resources-nav__link {
-  color: var(--color-primary);
+  color: var(--color-accent);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
@@ -268,9 +269,9 @@ nav a:hover {
 .resources-nav__link:hover,
 .resources-nav__link:active,
 .resources-nav__link:focus {
-  color: var(--color-accent-hover);
+  color: #ffffff; /* ONLY CHANGE: White text on hover for better contrast */
   text-decoration: underline;
-  background-color: rgba(26, 188, 156, 0.1);
+  background-color: var(--color-teal-500); /* ONLY CHANGE: Solid background instead of transparent */
   transform: translateX(5px);
 }
 
